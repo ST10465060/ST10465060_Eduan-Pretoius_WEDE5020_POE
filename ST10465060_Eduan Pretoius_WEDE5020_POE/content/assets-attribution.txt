@@ -1,0 +1,209 @@
+PROJECT: Healing Hooves (ST10465060_Eduan Pretorius_WEDE5020_POE)
+Purpose: Record sources, licenses, and intended use for all assets.
+
+============================================================================
+IMAGES (photography)
+Accessed: 17-08-2025
+License note: Pexels License (free to use; attribution appreciated but not required).
+
+1) Filename: home-hero.jpg
+   Stored path: assets/images/home/home-hero.jpg
+   Creator: Anastasia Shuraeva
+   Source: Pexels
+   URL: https://www.pexels.com/photo/horses-on-a-grass-field-under-a-cloudy-sky-4208113/
+   Original orientation: Horizontal
+   Edited size: 1920×1080 (16:9), JPG quality ~80, subsampling 4:2:0
+   Intended use: Homepage hero
+
+2) Filename: about-hero.jpg
+   Stored path: assets/images/about/about-hero.jpg
+   Creator: Gustavo Fring
+   Source: Pexels
+   URL: https://www.pexels.com/photo/a-person-holding-the-strap-of-a-bridle-on-the-horse-s-head-4894932/
+   Original orientation: Horizontal
+   Edited size: 1920×1080 (16:9), JPG quality ~80, subsampling 4:2:0
+   Intended use: About page hero
+
+3) Filename: equine-psychotherapy.jpg
+   Stored path: assets/images/services/equine-psychotherapy.jpg
+   Creator: SHVETS production
+   Source: Pexels
+   URL: https://www.pexels.com/photo/a-therapist-writing-on-a-paper-7176076/
+   Original orientation: Horizontal
+   Edited size: 1200×800 (3:2), JPG quality ~80, subsampling 4:2:0
+   Intended use: Services — Psychotherapy
+
+4) Filename: equine-learning.jpg
+   Stored path: assets/images/services/equine-learning.jpg
+   Creator: Wallace Chuck
+   Source: Pexels
+   URL: https://www.pexels.com/photo/silver-framed-eyeglasses-on-top-of-open-books-3728085/
+   Original orientation: Portrait
+   Edited size: 1200×800 (3:2) cropped to landscape, JPG quality ~80, subsampling 4:2:0
+   Intended use: Services — Learning
+
+5) Filename: family-sessions.jpg
+   Stored path: assets/images/services/family-sessions.jpg
+   Creator: Daria Obymaha
+   Source: Pexels
+   URL: https://www.pexels.com/photo/mother-and-daughter-on-grass-1683975/
+   Original orientation: Horizontal
+   Edited size: 1200×800 (3:2), JPG quality ~80, subsampling 4:2:0
+   Intended use: Services — Family Sessions
+
+6) Filename: workshops-groups.jpg
+   Stored path: assets/images/services/workshops-groups.jpg
+   Creator: Anna Tarazevich
+   Source: Pexels
+   URL: https://www.pexels.com/photo/women-sitting-by-the-table-collaborating-on-their-work-6146628/
+   Original orientation: Horizontal
+   Edited size: 1200×800 (3:2), JPG quality ~80, subsampling 4:2:0
+   Intended use: Services — Workshops & Groups
+
+7) Filename: corporate-team-building.jpg
+   Stored path: assets/images/services/corporate-team-building.jpg
+   Creator: Pavel Danilyuk
+   Source: Pexels
+   URL: https://www.pexels.com/photo/photo-of-people-shaking-hands-8112186/
+   Original orientation: Portrait
+   Edited size: 1200×800 (3:2) cropped to landscape, JPG quality ~80, subsampling 4:2:0
+   Intended use: Services — Corporate Team Building
+
+8) Filename: contact-banner.jpg
+   Stored path: assets/images/contact/contact-banner.jpg
+   Creator: thecactusena
+   Source: Pexels
+   URL: https://www.pexels.com/photo/a-horse-on-a-pasture-seen-from-behind-a-wooden-fence-17651744/
+   Original orientation: Portrait
+   Edited size: 1600×600 (wide banner), JPG quality ~80, subsampling 4:2:0
+   Intended use: Contact page banner
+
+9) Filename: newsletter.jpg
+   Stored path: assets/images/home/newsletter.jpg
+   Creator: Léo Gilmant
+   Source: Pexels
+   URL: https://www.pexels.com/photo/woman-petting-a-horse-23670263/
+   Original orientation: Portrait
+   Edited size: 1200×800 (3:2) cropped to landscape, JPG quality ~80, subsampling 4:2:0
+   Intended use: Home — Newsletter/Community section
+
+10) Filename: og-image.jpg
+    Stored path: seo/og-image.jpg
+    Derived from: assets/images/home/home-hero.jpg (same source and license as #1)
+    Edited size: 1200×630 (OG), JPG quality ~80
+    Intended use: Social sharing (Open Graph)
+
+============================================================================
+ICONS (SVG)
+Accessed: 18-08-2025
+License note: IconScout Free License — attribution required (check each page for terms).
+
+Services (used on services.html)
+11) Filename: therapy.svg
+    Stored path: assets/icons/therapy.svg
+    Contributor: iconkanan
+    Source: IconScout — “Speech Bubble”
+    URL: https://iconscout.com/free-icon/speech-bubble-4112658_3410753
+    Intended use: Services — Psychotherapy
+
+12) Filename: learning.svg
+    Stored path: assets/icons/learning.svg
+    Contributor: Yaprativa
+    Source: IconScout — “Open Book”
+    URL: https://iconscout.com/free-icon/open-book-2855353_2376585
+    Intended use: Services — Learning
+
+13) Filename: family.svg
+    Stored path: assets/icons/family.svg
+    Contributor: Leremy Stick Figures
+    Source: IconScout — “Father and Son”
+    URL: https://iconscout.com/free-icon/father-and-son-1648934_1398770
+    Intended use: Services — Family Sessions
+
+14) Filename: workshop.svg
+    Stored path: assets/icons/workshop.svg
+    Contributor: Ramanaptr
+    Source: IconScout — “Discussion”
+    URL: https://iconscout.com/free-icon/discussion-13601953_11223561
+    Intended use: Services — Workshops & Groups
+
+15) Filename: corporate.svg
+    Stored path: assets/icons/corporate.svg
+    Contributor: Font Awesome (IconScout listing)
+    Source: IconScout — “Briefcase”
+    URL: https://iconscout.com/free-icon/briefcase-case-work-bag-suitcase-stationary_44555
+    Intended use: Services — Corporate Team Building
+
+Contact (used on contact.html and footer)
+16) Filename: location.svg
+    Stored path: assets/icons/location.svg
+    Contributor: Vector Stall
+    Source: IconScout — “Map”
+    URL: https://iconscout.com/free-icon/map-1848_1166914
+    Intended use: Contact — Location/address
+
+17) Filename: phone.svg
+    Stored path: assets/icons/phone.svg
+    Contributor: Akveo (Eva Icons)
+    Source: IconScout — “Phone”
+    URL: https://iconscout.com/free-icon/phone-1767892_1502145
+    Intended use: Contact — Phone
+
+18) Filename: email.svg
+    Stored path: assets/icons/email.svg
+    Contributor: Metami Septiana
+    Source: IconScout — “Envelope”
+    URL: https://iconscout.com/free-icon/envelope-7978355_6472744
+    Intended use: Contact — Email
+
+19) Filename: clock.svg
+    Stored path: assets/icons/clock.svg
+    Contributor: Unicons Font
+    Source: IconScout — “Clock”
+    URL: https://iconscout.com/free-icon/clock-3660766_3051375
+    Intended use: Contact — Hours/availability
+
+Trust (used on about.html or footer)
+20) Filename: shield.svg
+    Stored path: assets/icons/shield.svg
+    Contributor: Unicons Font
+    Source: IconScout — “Shield”
+    URL: https://iconscout.com/free-icon/shield-1438407_1213977
+    Intended use: Safety/ethics/trust indicator
+
+============================================================================
+SELF-CREATED (no external source)
+21) Filename: logo.svg
+    Stored path: assets/icons/logo.svg
+    Creator: Eduan Pretorius
+    Source: Created in Inkscape
+    License: Owned by project author (student); free for this site
+    Intended use: Site header wordmark
+
+22) Filename: logo-mark.svg
+    Stored path: assets/icons/logo-mark.svg
+    Creator: Eduan Pretorius
+    Source: Created in Inkscape
+    License: Owned by project author (student); free for this site
+    Intended use: Small mark, favicon source
+
+============================================================================
+FONTS (self‑hosted webfonts)
+Accessed: 25-08-2025
+License note: SIL Open Font License 1.1 (OFL). Keep LICENSE-OFL.txt inside each family folder.
+
+23) Family: Playfair Display
+    Stored path: assets/fonts/playfair-display/
+    Files: PlayfairDisplay-Bold, PlayfairDisplay-BoldItalic, PlayfairDisplay-Italic
+    Source: Google Fonts
+    URL: https://fonts.google.com/specimen/Playfair
+    License file in repo: assets/fonts/playfair-display/LICENSE-OFL.txt
+    Intended use: Headings (H1–H3)[, quotes in italic]
+
+24) Family: Inter
+    Stored path: assets/fonts/inter/
+    Files: inter_24pt-regular.ttf
+    Source: Google Fonts
+    URL: https://fonts.google.com/specimen/Inter
+    License file in repo: assets/fonts/inter/LICENSE-OFL.txt
+    Intended use: Body text (400), emphasis/buttons (600)
