@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://st10465060.github.io/ST10465060_Eduan-Pretoius_WEDE5020_POE/sitemap.xml
