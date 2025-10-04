@@ -7,24 +7,35 @@ Equine therapy informational site built for WEDE5020 (Web Development) Portfolio
 - Goal: A small multi‑page, accessible, responsive website with self‑hosted assets and clear documentation.
 
 ## Live Preview
-Once GitHub Pages is enabled (Settings → Pages → Deploy from /docs), add the link here:
-- https://<your-username>.github.io/<repo-name>/
+- Live site: https://st10465060.github.io/ST10465060_Eduan-Pretoius_WEDE5020_POE/
 
-## Repository Structure (key paths)
-- docs/
+## Repository structure (what’s in my folders)
+This shows how my files are actually organised now.
+
+- docs/  ← the live site (GitHub Pages uses this folder)
   - index.html, about.html, services.html, enquiry.html, contact.html
-  - screenshots/  ← Part 2 evidence (device screenshots)
+  - sitemap.html, sitemap.xml, robots.txt
+  - downloads/
+    - consent-form.pdf, info-brochure.pdf
+  - screenshots/  ← device screenshots for Part 2
 - css/
   - style.css
 - assets/
-  - images/ (home, about, services, contact)
-  - icons/ (SVG)
-  - fonts/ (Inter, Playfair Display + OFL licenses)
-  - SEO/ (og-image etc.)
-- sitemap/
-- asset-attribution.txt  ← all sources, licenses, and learning references
-- .gitattributes         ← line-ending normalization (LF) for text/code
-
+  - images/
+    - home/  (homepage images)
+    - about/ (about hero)
+    - services/ (service card images)
+    - contact/ (contact/banner)
+  - icons/ (SVG icons)
+  - fonts/
+    - Inter/ (OFL + font files)
+    - Playfair Display/ (OFL + font files)
+  - Logo/ (logo files)
+  - SEO/ (og image etc.)
+- content/  ← evidence only (per page: text.md, images.md, links.md)
+- sitemap/  ← planning notes only (not used by the live site)
+- .gitattributes  ← normalises line endings
+- asset-attribution.txt  ← full list of image/icon/font sources
 ---
 
 ## Pages
@@ -145,6 +156,21 @@ Tip: If you later rename copies to page‑specific names (e.g., home-desktop.png
   - git add -A
   - git commit -m "…"
   - git push
+
+---
+
+## References (IIE Harvard style)
+
+Learning resources
+- W3Schools. 2025. CSS Grid Layout. Available at: https://www.w3schools.com/css/css_grid.asp [Accessed 26 Sep 2025].
+- W3Schools. 2025. HTML Forms. Available at: https://www.w3schools.com/html/html_forms.asp [Accessed 26 Sep 2025].
+- W3Schools. 2025. Responsive Images. Available at: https://www.w3schools.com/howto/howto_css_image_responsive.asp [Accessed 26 Sep 2025].
+- W3C Web Accessibility Initiative (WAI). 2025. Images Concepts: Alt Text. Available at: https://www.w3.org/WAI/tutorials/images/ [Accessed 26 Sep 2025].
+
+Referencing guide
+- The IIE. 2025. The IIE Harvard (Anglia) Style Reference Guide. [PDF supplied in module] [Accessed 26 Sep 2025].
+
+Full image, icon, and font source list is in asset-attribution.txt (repo root). Font OFL licenses are inside assets/fonts/. Per‑page image choices are logged in content/<page>/images.md.
 
 ---
 
