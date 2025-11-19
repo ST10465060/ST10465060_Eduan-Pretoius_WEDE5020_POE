@@ -36,7 +36,6 @@ body {
 }
 
 /* ========== Fonts ========== */
-/* Part 1 (original) - wrong relative path from css/ to assets/ (used ./assets/...) */
 /* Part 2 update: go up one level to assets/ */
 @font-face {
   font-family: "Inter";
@@ -110,7 +109,7 @@ h1, h2, h3 {
   text-decoration: none; color: #222;
   padding: 8px 8px; border-radius: 6px;
 }
-/* Part 1 (original): `.nav a:hover,nav a.active` missing dot before nav */
+/* Part 1 (original): missing dot before nav */
 /* Part 2 update: */
 .nav a:hover,
 .nav a.active { background: #f0f5f1; }
@@ -139,6 +138,7 @@ h1, h2, h3 {
 
 /* Desktop hero: text + image side-by-side */
 @media (min-width: 900px) {
+  
   /* Part 1 (original): grid-template-columns: 1.15fr.85fr */
   /* Part 2 update: correct spacing in values */
   .hero-wrap { display: grid; grid-template-columns: 1.15fr 0.85fr; align-items: center; }
@@ -158,7 +158,7 @@ h1, h2, h3 {
 .btn.alt:hover { background: var(--gold-600); border-color: var(--gold-600); }
 
 /* ========== Cards & Grids ========== */
-/* Part 1 (original): `.grid-2,grid-3,grid-4` missing dots */
+/* Part 1 : `.grid-2,grid-3,grid-4` missing dots */
 /* Part 2 update: add dots and set mobile-first 1-col */
 .grid-2, .grid-3, .grid-4 { display: grid; gap: 16px; }
 .grid-2 { grid-template-columns: 1fr; }
@@ -204,6 +204,41 @@ h1, h2, h3 {
   font-size: 0.8125rem;
   color: #666;
 }
+
+/* Part 3: simple styles for form errors and success message */
+.input.has-error,
+select.has-error,
+textarea.has-error {
+  border-color: #c62828;
+  background-color: #fff5f5;
+}
+
+.field-error {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.8rem;
+  color: #c62828;
+}
+
+.form-result {
+  margin-top: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.form-result.error {
+  border: 1px solid #c62828;
+  background-color: #fff5f5;
+  color: #5d1212;
+}
+
+.form-result.success {
+  border: 1px solid #2e7d32;
+  background-color: #f1fff3;
+  color: #1b5e20;
+}
+
 .news-img {
   width: 100%;
   height: 180px;
@@ -335,19 +370,28 @@ img{ max-width: 100%; height: auto; display: block; }
 .info-list li{ display: flex; align-items: center; gap: 8px; }
 .info-list img, .icon{ height: 20px; width: auto; }
 
-.map-card{
-  min-height: 220px;
-  display: flex; align-items: center; justify-content: center;
-  color: #666; background: #f8f8f8;
+/* Contact page maps */
+.map-card {
+  height: 260px;              
+  background: #f8f8f8;
   border: 1px solid var(--border);
   border-radius: 10px;
+  overflow: hidden;
+  padding: 0;                 
+}
+
+.map-card iframe {
+  display: block;
+  width: 100%;
+  height: 100%;               
+  border: 0;
 }
 
 /* 8) Spacing polish for cards and buttons */
 .card{ padding: clamp(12px, 2.5vw, 20px); }
 .btn{ padding: 10px 16px; }
 
-/* Make newsletter/media blocks breathe on small screens (optional) */
+/* Make newsletter/media blocks breathe on small screens */
 @media (max-width: 900px){
   .newsletter-grid{ display: grid; grid-template-columns: 1fr; gap: 16px; }
 }

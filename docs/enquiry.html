@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Enquiry – Healing Hooves</title>
   <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- Part 3: main JS file for forms and interactions -->
+  <script src="./js/main.js" defer></script>
+
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -37,69 +41,160 @@
       <div class="container">
         
         <!-- Part 2 update: responsive 2‑column grid -->
-        <form class="form-grid" action="#" method="post" novalidate>
+        <!--form class="form-grid" action="#" method="post" novalidate-->
 
-          <!-- Full name (required) -->
-          <!-- Part 2: labels wrap inputs for larger taps -->
-          <label class="full">
-            <span>Full name</span>
-            <input class="input" type="text" name="name" placeholder="Your full name" required>
+        <!-- Part 3: JS will use data-js to find this form -->
+      <form class="form-grid" action="#" method="post" novalidate data-js="enquiry-form">
+
+        <!-- Full name (required) -->
+        <!-- Part 2: labels wrap inputs for larger taps -->
+        <label class="full">
+          <span>Full name</span>
+          <input
+            class="input"
+            type="text"
+            id="fullName"          
+            name="name"
+            placeholder="Your full name"
+            required
+          >
+        </label>
+
+        <!-- Email -->
+        <label>
+          <span>Email</span>
+          <input
+            class="input"
+            type="email"
+            id="email"             
+            name="email"
+            placeholder="you@example.com"
+            required
+          >
+        </label>
+
+        <!-- Phone -->
+        <label>
+          <span>Phone</span>
+          <input
+            class="input"
+            type="tel"
+            id="phone"             
+            name="phone"
+            placeholder="+27 82 123 4567"
+          >
+        </label>
+
+        <!-- Preferred location -->
+        <label>
+          <span>Preferred location</span>
+          <select
+            class="input"
+            id="location"          
+            name="location"
+            required
+          >
+            <option value="" selected disabled>Select a location</option>
+            <option value="sandton">Johannesburg (Sandton)</option>
+            <option value="centurion">Pretoria (Centurion)</option>
+            <option value="either">Either location</option>
+          </select>
+        </label>
+
+        <!-- Session type -->
+        <!-- Part 3: tidy fieldset so JS and screen readers see one grouped choice -->
+        <fieldset class="full">
+          <legend>Session type</legend>
+
+          <label for="typePsychotherapy">   
+            <input
+              type="radio"
+              id="typePsychotherapy"        
+              name="type"
+              value="psychotherapy"
+              required
+            >
+            Equine-Assisted Psychotherapy
+          </label><br>
+
+          <label for="typeLearning">
+            <input
+              type="radio"
+              id="typeLearning"            
+              name="type"
+              value="learning"
+            >
+            Equine-Assisted Learning
+          </label><br>
+
+          <label for="typeFamily">
+            <input
+              type="radio"
+              id="typeFamily"               
+              name="type"
+              value="family"
+            >
+            Family Session
+          </label><br>
+
+          <label for="typeWorkshop">
+            <input
+              type="radio"
+              id="typeWorkshop"             
+              name="type"
+              value="workshop"
+            >
+            Workshop / Group
+          </label><br>
+
+          <label for="typeCorporate">
+            <input
+              type="radio"
+              id="typeCorporate"           
+              name="type"
+              value="corporate"
+            >
+            Corporate Team Building
           </label>
+        </fieldset>
 
-          <!-- Email -->
-          <label>
-            <span>Email</span>
-            <input class="input" type="email" name="email" placeholder="you@example.com" required>
-          </label>
+        <!-- Message -->
+        <!-- Part 2: keep original message field inside the grid -->
+        <label class="full">
+          <span>Message</span>
+          <textarea
+            class="input"
+            id="message"                   
+            name="message"
+            rows="5"
+            placeholder="Tell us briefly what you’re looking for..."
+            required
+          ></textarea>
+        </label>
 
-          <!-- Phone (optional) -->
-          <label>
-            <span>Phone</span>
-            <input class="input" type="tel" name="phone" placeholder="+27 82 123 4567">
-          </label>
+        <!-- Consent -->
+        <label class="full" for="consent"> 
+          <input
+            type="checkbox"
+            id="consent"                   
+            name="consent"
+            required
+          >
+          I consent to you using this information to respond to my enquiry.
+        </label>
 
-          <!-- Preferred location -->
-          <label>
-            <span>Preferred location</span>
-            <select class="input" name="location" required>
-              <option value="" selected disabled>Select a location</option>
-              <option value="sandton">Johannesburg (Sandton)</option>
-              <option value="centurion">Pretoria (Centurion)</option>
-              <option value="either">Either location</option>
-            </select>
-          </label>
+        <!-- Submit + note -->
+        <div class="full">
+          <button class="btn alt" type="submit">Send enquiry</button>
+          <p class="form-note">
+            We process your data only to respond to this enquiry and never share it without consent.
+          </p>
+        </div>
 
-          <!-- Session type -->
-          <!-- Part 2: group radios in a fieldset with a legend for accessibility -->
-          <fieldset class="full">
-            <legend>Session type</legend>
-            <label><input type="radio" name="type" value="psychotherapy" required> Equine‑Assisted Psychotherapy</label><br>
-            <label><input type="radio" name="type" value="learning"> Equine‑Assisted Learning</label><br>
-            <label><input type="radio" name="type" value="family"> Family Session</label><br>
-            <label><input type="radio" name="type" value="workshop"> Workshop / Group</label><br>
-            <label><input type="radio" name="type" value="corporate"> Corporate Team Building</label>
-          </fieldset>
+        <!-- Part 3: message after successful validation -->
+        <div id="enquiry-result" class="full form-result" aria-live="polite"></div>
 
-          <!-- Message -->
-          <!-- Part 2: keep your original message field inside the grid -->
-          <label class="full">
-            <span>Message</span>
-            <textarea class="input" name="message" rows="5" placeholder="Tell us briefly what you’re looking for..." required></textarea>
-          </label>
-
-          <!-- Consent -->
-          <label class="full">
-            <input type="checkbox" name="consent" required>
-            I consent to you using this information to respond to my enquiry.
-          </label>
-
-          <!-- Submit + note -->
-          <div class="full">
-            <button class="btn alt" type="submit">Send enquiry</button>
-            <p class="form-note">We process your data only to respond to this enquiry and never share it without consent.</p>
-          </div>
-
-        </form>
+      </form>
       </div>
     </section>
   </main>
@@ -135,8 +230,6 @@
       <p>&copy; <span id="year"></span> Healing Hooves. All rights reserved.</p>
     </div>
   </footer>
-
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 <p><a href="sitemap.html">Sitemap</a></p>
 </html>

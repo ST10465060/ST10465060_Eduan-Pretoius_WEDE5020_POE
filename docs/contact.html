@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact – Healing Hooves</title>
+
+  <!-- NOTE: contact.html is in docs/, css is ABOVE it -->
   <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
@@ -12,7 +14,11 @@
   <header class="site-header">
     <div class="container navbar">
       <a class="logo" href="index.html">
-        <img src="../assets/Logo/Healing%20Hooves%20Logo.png" alt="Healing Hooves logo" height="36" />
+        <img
+          src="../assets/Logo/Healing%20Hooves%20Logo.png"
+          alt="Healing Hooves logo"
+          height="36"
+        />
         <span>Healing Hooves</span>
       </a>
       <nav class="nav" aria-label="Main">
@@ -29,33 +35,141 @@
     <section class="section">
       <div class="container">
         <h1>Contact</h1>
-        <p class="lead">Two locations. Please note maps are placeholders until addresses are confirmed.</p>
+        <p class="lead">
+          Two locations. Please note maps are placeholders until addresses are confirmed.
+        </p>
       </div>
     </section>
 
     <section class="section">
       <div class="container grid-2">
+        
+        <!-- contact info + form -->
         <div class="card">
           <h2>Get in touch</h2>
+
           <ul class="info-list mt-1">
-            <li><img src="../assets/icons/envelope.svg" alt="" aria-hidden="true"> info@healinghooves.co.za (placeholder)</li>
-            <li><img src="../assets/icons/phone.svg" alt="" aria-hidden="true"> +27 (0) 10 000 0000 (placeholder)</li>
-            <li><img src="../assets/icons/clock.svg" alt="" aria-hidden="true"> Mon–Fri 09:00–17:00; Sat by appointment</li>
+            <li>
+              <img src="../assets/icons/envelope.svg" alt="Email icon" class="icon" />
+              info@healinghooves.co.za (placeholder)
+            </li>
+            <li>
+              <img src="../assets/icons/phone.svg" alt="Phone icon" class="icon" />
+              +27 (0) 10 000 0000 (placeholder)
+            </li>
+            <li>
+              <img src="../assets/icons/clock.svg" alt="Clock icon" class="icon" />
+              Mon–Fri 09:00–17:00; Sat by appointment
+            </li>
           </ul>
 
-          <p class="mt-2"><a class="btn" href="enquiry.html">Send an enquiry</a></p>
+          <!-- Contact form -->
+          <form id="contactForm" class="mt-2" novalidate>
+            <label class="full">
+              <span>Your name</span>
+              <input
+                class="input"
+                type="text"
+                id="contactName"
+                name="contactName"
+                placeholder="Your full name"
+                required
+              />
+            </label>
+
+            <label class="full">
+              <span>Email</span>
+              <input
+                class="input"
+                type="email"
+                id="contactEmail"
+                name="contactEmail"
+                placeholder="you@example.com"
+                required
+              />
+            </label>
+
+            <label class="full">
+              <span>Phone (optional)</span>
+              <input
+                class="input"
+                type="tel"
+                id="contactPhone"
+                name="contactPhone"
+                placeholder="+27 82 123 4567"
+              />
+            </label>
+
+            <label class="full">
+              <span>Message type</span>
+              <select
+                class="input"
+                id="contactType"
+                name="contactType"
+                required
+              >
+                <option value="" selected disabled>Please choose</option>
+                <option value="general">General question</option>
+                <option value="booking">Booking enquiry</option>
+                <option value="support">Donation / Support</option>
+                <option value="other">Other</option>
+              </select>
+            </label>
+
+            <label class="full">
+              <span>Message</span>
+              <textarea
+                class="input"
+                id="contactMessage"
+                name="contactMessage"
+                rows="4"
+                placeholder="How can we help?"
+                required
+              ></textarea>
+            </label>
+
+            <button class="btn alt" type="submit">Open email to send</button>
+            <p id="contact-result" class="form-note mt-1" aria-live="polite"></p>
+          </form>
+
+          <p class="mt-2">
+            <a class="btn" href="enquiry.html">Go to detailed enquiry form</a>
+          </p>
         </div>
 
+        <!-- part 1/2: map placeholders -->
+        <!-- part 3: maps updated -->
         <div class="card">
-          <h2><img src="../assets/icons/map.svg" alt="" aria-hidden="true" class="icon"> Johannesburg – Sandton area</h2>
-          
-          <!-- Part 2 update: simple placeholder box (no external embedings yet) -->
-          <div class="map-card mt-1">Map placeholder</div>
+        <h2>
+          <img src="../assets/icons/map.svg" alt="" aria-hidden="true" class="icon" />
+          Johannesburg – Sandton area
+        </h2>
+
+        <div class="map-card mt-1">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.896543569066!2d28.004219799999998!3d-26.167498599999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e950b9b47135f11%3A0xb79576c484108561!2sMelville%20Koppies%20Nature%20Reserve!5e0!3m2!1sen!2sza!4v1763537370272!5m2!1sen!2sza"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map of Healing Hooves – Sandton area"
+          ></iframe>
         </div>
+      </div>
 
         <div class="card">
-          <h2><img src="../assets/icons/map.svg" alt="" aria-hidden="true" class="icon"> Pretoria – Centurion area</h2>
-          <div class="map-card mt-1">Map placeholder</div>
+        <h2>
+          <img src="../assets/icons/map.svg" alt="" aria-hidden="true" class="icon" />
+          Pretoria – Centurion area
+        </h2>
+
+        <div class="map-card mt-1">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3592.7603926808265!2d28.223749200000004!3d-25.7784767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956173d7018a2d%3A0xf6aeb90790c4d180!2sJan%20Cilliers%20Park!5e0!3m2!1sen!2sza!4v1763537459149!5m2!1sen!2sza"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map of Healing Hooves – Centurion area"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -93,7 +207,55 @@
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <p class="center"><a href="sitemap.html">Sitemap</a></p>
+
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Contact form: validation + mailto
+    const contactForm = document.getElementById('contactForm');
+    const contactResult = document.getElementById('contact-result');
+
+    if (contactForm) {
+      contactForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        const name = document.getElementById('contactName').value.trim();
+        const email = document.getElementById('contactEmail').value.trim();
+        const phone = document.getElementById('contactPhone').value.trim();
+        const type = document.getElementById('contactType').value;
+        const message = document.getElementById('contactMessage').value.trim();
+
+        if (!name || !email || !type || !message) {
+          contactResult.textContent =
+            'Please fill in your name, email, message type and message.';
+          contactResult.style.color = 'red';
+          return;
+        }
+
+        const to = 'info@healinghooves.co.za'; // placeholder
+        const subject = encodeURIComponent('Website contact enquiry');
+
+        const bodyLines = [
+          `Name: ${name}`,
+          `Email: ${email}`,
+          phone ? `Phone: ${phone}` : '',
+          `Type: ${type}`,
+          '',
+          'Message:',
+          message
+        ].filter(Boolean);
+
+        const body = encodeURIComponent(bodyLines.join('\n'));
+        const mailtoUrl = `mailto:${to}?subject=${subject}&body=${body}`;
+
+        contactResult.textContent = 'Opening your email application...';
+        contactResult.style.color = 'green';
+
+        window.location.href = mailtoUrl;
+      });
+    }
+  </script>
 </body>
-<p><a href="sitemap.html">Sitemap</a></p>
 </html>
